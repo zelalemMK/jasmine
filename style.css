@@ -1,0 +1,128 @@
+/* Reset Stylesheet */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+
+    /* font */
+    /* font-family: 'Permanent Marker', cursive; */
+}
+
+body, html, h1 {
+    overflow-x: hidden;
+    font-family: 'Permanent Marker', cursive;
+}
+
+/* Header and Navigation */
+
+nav {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu-container {
+    height: 50px;
+    max-height: 200px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.hidden {
+    max-height: 0;
+}
+
+#menuButton {
+    /* border: 1px solid black; */
+
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    /* gap: 5px; */
+}
+.top > * {
+    border: 1px solid black;
+    width: 200px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    letter-spacing: 0.686567em;
+    font-size: 3em;
+    text-align: center;
+    margin: 1rem;
+}
+.long-text {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+/* IMG */
+.img-container {
+
+    margin: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img {
+    width: 80vw;
+
+}
+
+
+.card-container > * {
+    border: 1px solid black;
+    width: 100%;
+    height: 200px;
+    margin-top: 3px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+}
+
+/* For viewports larger than 768px */
+@media (min-width:769px) {
+    img {
+        width: 45vw;
+    }
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } 
+    .full-width {
+        grid-column: 1 / 3;
+        font-size: 2em;
+        /* margin: 1em; */
+        /* padding: 1em; */
+    }
+}
